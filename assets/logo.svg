@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 130" width="100%" height="100%">
+  <defs>
+    <path id="leaf" d="M 0,0 C 12,-18 28,-18 32,-4 C 28,12 12,12 0,0 Z" />
+  </defs>
+
+  <!-- Left branch of D -->
+  <path d="M 80,70 C 60,85 30,85 5,95 C 20,90 50,95 65,80 C 75,100 50,110 30,115 C 50,110 75,100 85,75 Z" fill="#4a6d9d"/>
+
+  <!-- Dutchess text -->
+  <text x="65" y="75" font-family="'Georgia', 'Times New Roman', serif" font-size="80" fill="#4a6d9d" font-weight="bold">Dutchess</text>
+  
+  <!-- .co.uk text -->
+  <text x="395" y="75" font-family="'Georgia', 'Times New Roman', serif" font-size="24" fill="#4a6d9d" font-weight="bold">.co.uk</text>
+  
+  <!-- plantsforlondon text -->
+  <text x="110" y="105" font-family="'Arial', 'Helvetica', sans-serif" font-size="28" fill="#c3e498" letter-spacing="1">
+    <tspan font-weight="normal">plants</tspan><tspan font-weight="bold">for</tspan><tspan font-weight="normal">london</tspan>
+  </text>
+  
+  <!-- Leaves on the right -->
+  <!-- Top leaf -->
+  <use href="#leaf" x="375" y="25" fill="#4a6d9d" transform="rotate(-30 375 25) scale(0.9)"/>
+  <!-- Bottom leaf -->
+  <use href="#leaf" x="390" y="42" fill="#4a6d9d" transform="rotate(-60 390 42) scale(1.1)"/>
+</svg>
