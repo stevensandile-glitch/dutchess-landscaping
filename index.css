@@ -395,36 +395,6 @@ img {
     z-index: 1;
 }
 
-.slideshow-section::before {
-    content: '';
-    position: absolute;
-    top: 0; 
-    left: 0; right: 0; bottom: 0;
-    
-    /* 4 vertical vines */
-    background-image: 
-        url('assets/vine-divider-vertical.png'),
-        url('assets/vine-divider-vertical.png'),
-        url('assets/vine-divider-vertical.png'),
-        url('assets/vine-divider-vertical.png');
-    background-position: 
-        10% bottom,
-        35% bottom,
-        65% bottom,
-        90% bottom;
-    background-repeat: repeat-y;
-    background-size: 50px auto;
-    
-    opacity: 0.15; /* Increased opacity */
-    
-    /* Grow up to the header and fade out */
-    mask-image: linear-gradient(to top, black 10%, transparent 90%);
-    -webkit-mask-image: linear-gradient(to top, black 10%, transparent 90%);
-    
-    z-index: 0;
-    pointer-events: none;
-}
-
 .slideshow-header {
     text-align: center;
     margin-bottom: 40px;
