@@ -180,7 +180,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/london_courtyard_garden.png');
+    background-image: url('assets/media__1780212389068.jpg');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
@@ -335,7 +335,8 @@ img {
 }
 
 .outdoor-header {
-    background-image: url('assets/media__1780212368001.jpg');
+    background-image: url('assets/outdoor_hero_flowers.jpg');
+    background-position: center 60%;
 }
 
 .header-overlay {
