@@ -108,10 +108,10 @@ img {
 }
 
 .footer-brand-logo {
-    height: 50px;
-    margin-bottom: 20px;
+    height: 75px;
+    margin-bottom: 25px;
     filter: brightness(0) invert(1);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .navbar.scrolled .brand-logo {
@@ -497,15 +497,23 @@ img {
 
 .footer-contact p {
     margin-bottom: 16px;
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.65);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
-.footer-contact a:hover {
+.footer-email-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: var(--color-gold);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.footer-email-link:hover {
+    color: var(--color-white);
+    transform: translateY(-2px);
 }
 
 .footer-bottom {
