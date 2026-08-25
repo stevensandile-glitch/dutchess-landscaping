@@ -255,11 +255,17 @@ img {
 /* --------------------------------------------------
    Landing Page Cards (Indoor / Outdoor)
 -------------------------------------------------- */
+.section-divider {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(18, 53, 36, 0.3), transparent);
+    margin: 20px auto 40px auto;
+}
+
 .landing-cards {
-    padding: 80px 24px;
+    padding: 40px 24px 80px 24px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: -60px;
     position: relative;
     z-index: 5;
 }
