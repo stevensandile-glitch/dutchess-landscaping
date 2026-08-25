@@ -36,14 +36,16 @@ body {
     background-color: var(--color-light-bg);
     color: var(--color-dark-text);
     line-height: 1.6;
+    letter-spacing: 0.015em;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
-    font-weight: 500; /* Lighter, more elegant headings */
+    font-weight: 400; /* Luxury editorial look */
     color: var(--color-primary-dark);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
 }
 
 a {
@@ -62,20 +64,22 @@ img {
    Navbar
 -------------------------------------------------- */
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 15px 0;
-    background-color: var(--color-white);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+    background-color: rgba(255, 255, 255, 0.85); /* Frosted Glass */
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
 }
 
 .navbar.scrolled {
     padding: 15px 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -138,15 +142,16 @@ img {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--color-gold);
+    color: var(--color-primary); /* Darker green instead of gold for better contrast on white */
 }
 
 .navbar.scrolled .nav-link:hover, .navbar.scrolled .nav-link.active {
-    color: var(--color-gold);
+    color: var(--color-primary);
 }
 
 .nav-link:hover::after, .nav-link.active::after {
     width: 100%;
+    background-color: var(--color-primary); /* Match underline to text */
 }
 
 .burger-menu {
@@ -201,6 +206,7 @@ img {
     position: relative;
     z-index: 2;
     max-width: 800px;
+    margin-top: 80px; /* Offset for fixed header */
 }
 
 .hero-title {
@@ -213,8 +219,31 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.35rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    background-color: var(--color-light-bg);
 }
 
 /* --------------------------------------------------
@@ -239,7 +268,8 @@ img {
     background-color: var(--color-white);
     border-radius: var(--border-radius-md);
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(50, 117, 76, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
     transition: var(--transition);
     display: block;
 }
@@ -294,6 +324,7 @@ img {
 
 .landing-card:hover .card-btn {
     color: var(--color-accent);
+    transform: translateX(5px);
 }
 
 /* --------------------------------------------------
@@ -314,7 +345,7 @@ img {
 }
 
 .indoor-header {
-    background-image: url('assets/media__1780212389262.jpg');
+    background-image: url('assets/indoor_lucky_bamboo.jpg');
 }
 
 .outdoor-header {
@@ -334,6 +365,7 @@ img {
 .page-header .header-content {
     position: relative;
     z-index: 2;
+    margin-top: 80px; /* Offset for fixed header */
 }
 
 .page-header h1 {
@@ -711,4 +743,79 @@ img {
     .contact-right {
         padding: 30px 20px;
     }
+}
+
+/* --------------------------------------------------
+   Animations
+-------------------------------------------------- */
+.animate-fade-up {
+    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
+.animate-delay-4 { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --------------------------------------------------
+   Manifesto Layout (Environmental Policy)
+-------------------------------------------------- */
+.manifesto-container {
+    max-width: 800px;
+    margin: -80px auto 100px;
+    position: relative;
+    z-index: 10;
+    background-color: var(--color-white);
+    padding: 80px;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+}
+
+.manifesto-container p {
+    font-size: 1.15rem;
+    color: #4a5d54;
+    line-height: 2;
+    margin-bottom: 24px;
+}
+
+.manifesto-container strong {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.manifesto-list {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.manifesto-list li {
+    font-size: 1.1rem;
+    color: #4a5d54;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.manifesto-list li::before {
+    content: '•';
+    position: absolute;
+    left: -5px;
+    color: var(--color-gold);
+    font-size: 1.5rem;
+    top: -2px;
 }
