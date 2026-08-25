@@ -69,18 +69,17 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 24px 0;
-    background-color: rgba(18, 53, 36, 0.95); /* Dark Green Frosted Glass */
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
+    padding: 30px 0;
+    background-color: transparent;
+    border-bottom: none;
+    transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
     padding: 15px 0;
     background-color: rgba(18, 53, 36, 0.98);
     backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -347,7 +346,7 @@ img {
 }
 
 .outdoor-header {
-    background-image: url('assets/outdoor_hero_flowers.jpg');
+    background-image: url('assets/gore_hotel.jpg');
     background-position: center 60%;
 }
 
