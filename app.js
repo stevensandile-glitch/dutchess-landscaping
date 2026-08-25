@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-   Dutchess — Plants for London JavaScript
+   Dutchess - Plants for London JavaScript
    Simplified Multi-Page Interactions
 -------------------------------------------------- */
 

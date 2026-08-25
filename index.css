@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-   Dutchess — Plants for London Style Sheets
+   Dutchess - Plants for London Style Sheets
    Multi-Page Architecture CSS
 -------------------------------------------------- */
 
@@ -180,7 +180,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/media__1780212389068.jpg');
+    background-image: url('assets/outdoor_grey_planters.jpg');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
