@@ -102,8 +102,7 @@ img {
 .brand-logo, .logo-img {
     height: 45px;
     width: auto;
-    filter: invert(1) grayscale(1) brightness(2);
-    mix-blend-mode: screen;
+    filter: brightness(0) invert(1);
     opacity: 0.95;
     transition: var(--transition);
 }
@@ -111,8 +110,7 @@ img {
 .footer-brand-logo {
     height: 75px;
     margin-bottom: 25px;
-    filter: invert(1) grayscale(1) brightness(2);
-    mix-blend-mode: screen;
+    filter: brightness(0) invert(1);
     opacity: 0.95;
 }
 
